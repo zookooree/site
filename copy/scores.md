@@ -43,7 +43,7 @@ against the source record; verdict: no fabricated anchors in any variant)
 
 Per-criterion means: lineage — UVP 4.0, voice 5.0, concreteness 4.7, resonance 5.0.
 Promise — UVP 4.7, voice 4.0, concreteness 4.7, resonance 4.0. Manifesto — UVP 3.7,
-voice 4.0, concreteness 4.3, resonance 4.1.
+voice 4.0, concreteness 4.3, resonance 4.3.
 
 ## Verdict
 
@@ -72,15 +72,19 @@ nearly verbatim (voice 5.0, resonance 5.0 — do not disturb what scored perfect
    failure," "Judge us by what we admit") was the strongest promise section per Judge 2's
    concreteness audit. Edits: cut the flagged sales-edge lines; added the 3am
    who-takes-the-call beat to the certificate claim.
-3. **Kaizen anchor** ← the-promise-first: "it is how 49 seconds of output made the
-   whole factory smarter." Why: Judge 2 scored lineage concreteness 4 because two
+3. **Kaizen anchor** ← the-promise-first, tightened in landing (source: "it is the
+   mechanism by which 49 seconds of output makes the whole factory smarter"; landed:
+   "it is how 49 seconds of output made the whole factory smarter"). Why: Judge 2
+   scored lineage concreteness 4 because two
    principles floated on pure assertion; this was the exact anchor Judge 2 praised.
 4. **Decentralization closer** ← the-promise-first: "Trust you can verify does not
    require trusting us." Why: same Judge 2 finding — lineage's decentralization
    principle needed one line of substance under the assertion; this line makes the
    certificate the proof of the politics.
-5. **Invitation handle** ← the-manifesto-first: "write one for the agent you were
-   about to duct-tape together, and notice what changes." Why: Judges 1 and 3 both
+5. **Invitation handle** ← the-manifesto-first (source: "Then write a soul document
+   for the agent you were about to duct-tape together, and notice what changes";
+   landed as "write one ..." because site-copy's preceding sentence supplies the
+   antecedent). Why: Judges 1 and 3 both
    named it the most actionable summons on the panel — it turns the reader from
    admirer into participant. Merged with lineage's own praised handle ("pull the
    thread that looks broken — the line is built to stop").
