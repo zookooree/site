@@ -96,3 +96,61 @@ nearly verbatim (voice 5.0, resonance 5.0 — do not disturb what scored perfect
 Not taken: manifesto-first's name-excavation section (Judge 3: floats on lore);
 promise-first's builder/buyer/skeptic invitation (two judges flagged the rubric's
 customer-addressing deduction); every individually flagged line listed in the verdict.
+
+---
+
+# Judge Panel Record — Site Copy v2 (WO-ON2 revision)
+
+One round on the revised synthesis (`site-copy.md` v2), per the WO-ON2 work order:
+three independent judges, fresh context, on a different model (sonnet) than the
+reviser (fable). Each judge received only the rubric and the revised copy — no
+prior scores, no revision reasoning, no variants. Each scored all four criteria
+with a designated primary lens. This panel ran once and will not re-run; the
+operator's morning read is the final gate.
+
+The revision under judgment: the hero subline dropped the soul clause (PR #2
+finding 4, subline density) — two ideas instead of three. Present tense kept
+throughout per the operator's standing ruling.
+
+## Scores
+
+| Criterion | Judge 1 (UVP lens) | Judge 2 (voice lens) | Judge 3 (resonance lens) | Mean |
+|---|---|---|---|---|
+| UVP repeatability | 4 | 4 | 4 | 4.0 |
+| Voice fidelity | 4 | 4 | 4 | 4.0 |
+| Concreteness | 4 | 4 | 3 | 3.7 |
+| Resonance | 4 | 5 | 5 | 4.7 |
+| **Total (/20)** | **16** | **17** | **16** | **16.3** |
+
+## Verdict
+
+Three convergent findings, one miss against the WO-ON2 gate:
+
+1. **The gate misses by one score.** Judge 3 gave concreteness a 3: three
+   claims float on pure assertion — "Silence counts as failure" (no instance or
+   threshold), "Pull, not push" (no example of a specialist built or refused),
+   and "Decentralization" (argued entirely in political-philosophy register,
+   no anchor to anything the factory has done). Judges 1 and 2 saw the same
+   floating principles but scoped them inside a 4 (Judge 1 named pull-not-push
+   and decentralization; Judge 2 named silence and line-stop). The panel
+   disagrees on the count, not the diagnosis: the principles section carries
+   the page's unanchored weight. This is the v1 panel's finding recurring —
+   the grafts added one line of substance under decentralization, and Judge 3
+   found it still floating.
+2. **The jidoka/kaizen labels read as citation, not embodiment.** All three
+   judges flagged "Stop the line — jidoka" and "Improve daily — kaizen" against
+   the rubric's never-announces-its-influences rule, each inside a voice 4.
+   Unanimous, and new — the v1 panel did not surface it.
+3. **The hero holds.** All three judges confirmed the one-liner parses without
+   the subline and carries exactly one idea; Judge 3 confirmed the trimmed
+   subline is mood, not load-bearing information. Finding 4's crowding is
+   resolved, not relocated. Resonance is the page's strongest dimension
+   (4.7): both non-UVP judges scored the invitation 5, citing the concrete
+   first step and the earned closing. Dissents recorded: Judges 1 and 3 each
+   read "May all beings be free" as an imported register; Judge 2 read it as
+   a seeded payoff. Judge 1 held resonance at 4 on that ambiguity (fail
+   closed).
+
+Per WO-ON2, this record ships as-is — no post-panel copy edits (scores must
+describe the copy that ships) and no second round. The concreteness 3 and the
+label finding are the operator's morning decisions.
