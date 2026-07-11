@@ -1,18 +1,14 @@
 ---
 import Base from "../layouts/Base.astro";
-import { KB_URL, KB_PENDING, GITHUB_URL } from "../consts";
-
-const kbTitle = KB_PENDING ? "The knowledge base is coming soon." : undefined;
+import KbLink from "../components/KbLink.astro";
+import { GITHUB_URL, SITE_DESCRIPTION } from "../consts";
 ---
 
 <Base>
   <main>
     <header class="hero">
       <p class="brand">Zookooree · The Agent Factory</p>
-      <h1>
-        We build AI agents and sign our name to them: every one ships with a
-        certificate — evidence attached, expiry date printed.
-      </h1>
+      <h1>{SITE_DESCRIPTION}</h1>
       <p class="subline">
         A century ago a loom learned to stop itself when a thread broke. We aim
         that lesson at a new material: minds — each one given a written soul
@@ -88,9 +84,7 @@ const kbTitle = KB_PENDING ? "The knowledge base is coming soon." : undefined;
         the claim, the evidence bundled behind it, the expiry date printed on
         it — is what leaves the floor.
       </p>
-      <p class="kb-link">
-        <a href={KB_URL} title={kbTitle}>Details in the knowledge base →</a>
-      </p>
+      <KbLink />
     </section>
 
     <section aria-labelledby="promise">
@@ -135,9 +129,7 @@ const kbTitle = KB_PENDING ? "The knowledge base is coming soon." : undefined;
         <strong>When something is wrong, the line stops.</strong> Not after the
         sprint. Now. Silent failure is the only unforgivable sin.
       </p>
-      <p class="kb-link">
-        <a href={KB_URL} title={kbTitle}>Details in the knowledge base →</a>
-      </p>
+      <KbLink />
     </section>
 
     <section aria-labelledby="principles">
@@ -182,9 +174,7 @@ const kbTitle = KB_PENDING ? "The knowledge base is coming soon." : undefined;
         making happened, and who held the tools is secondary. Trust you can
         verify does not require trusting us.
       </p>
-      <p class="kb-link">
-        <a href={KB_URL} title={kbTitle}>Details in the knowledge base →</a>
-      </p>
+      <KbLink />
     </section>
 
     <section aria-labelledby="invitation" class="invitation">
@@ -282,23 +272,6 @@ const kbTitle = KB_PENDING ? "The knowledge base is coming soon." : undefined;
   strong {
     color: #f0ede6;
     font-weight: 600;
-  }
-
-  .kb-link {
-    margin-top: 2.25rem;
-    font-family: var(--mono);
-    font-size: 0.8125rem;
-  }
-
-  .kb-link a {
-    color: var(--muted);
-    border-bottom-color: color-mix(in srgb, var(--muted) 40%, transparent);
-  }
-
-  .kb-link a:hover,
-  .kb-link a:focus-visible {
-    color: var(--accent);
-    border-bottom-color: var(--accent);
   }
 
   /* the invitation gets the whitespace it deserves */

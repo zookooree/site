@@ -57,14 +57,18 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
   a {
     color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
-    transition: border-color 120ms ease;
+    /* underline via text-decoration so browsers without color-mix() still
+       show an underline (decoration-color falls back to currentColor) */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+    transition: text-decoration-color 120ms ease;
   }
 
   a:hover,
   a:focus-visible {
-    border-bottom-color: var(--accent);
+    text-decoration-color: var(--accent);
   }
 
   a:focus-visible {

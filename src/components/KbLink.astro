@@ -1,0 +1,38 @@
+---
+import { KB_URL, KB_PENDING } from "../consts";
+---
+
+{
+  KB_PENDING ? (
+    <p class="kb-link">
+      <span>Details will live in the knowledge base — coming soon</span>
+    </p>
+  ) : (
+    <p class="kb-link">
+      <a href={KB_URL}>Details in the knowledge base →</a>
+    </p>
+  )
+}
+
+<style>
+  .kb-link {
+    margin-top: 2.25rem;
+    font-family: var(--mono);
+    font-size: 0.8125rem;
+  }
+
+  .kb-link span {
+    color: var(--muted);
+  }
+
+  .kb-link a {
+    color: var(--muted);
+    text-decoration-color: color-mix(in srgb, var(--muted) 40%, transparent);
+  }
+
+  .kb-link a:hover,
+  .kb-link a:focus-visible {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+  }
+</style>
