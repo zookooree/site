@@ -1,0 +1,6 @@
+# Cloudflare Pages configuration.
+# When the Pages project is connected to this repo (dashboard step, see README),
+# Pages reads build output location from this file.
+name = "zookooree-site"
+compatibility_date = "2026-07-01"
+pages_build_output_dir = "dist"
