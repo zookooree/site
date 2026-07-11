@@ -5,9 +5,9 @@ The public storefront for Zookooree: The Agent Factory.
 Copy lives in `copy/`. The words come before the pixels. The page in `src/`
 is typeset by hand from `copy/site-copy.md`, and the copy file is the source
 of truth: `npm run check:copy` verifies that every paragraph of it renders
-verbatim in the built page, and CI fails if the two drift. If the words
-change in `copy/`, they must change in `src/` — the gate is what makes that
-rule real.
+verbatim in the built page and fails the build if the two drift. If the
+words change in `copy/`, they must change in `src/` — the gate is what makes
+that rule real.
 
 ## Stack
 
@@ -26,9 +26,10 @@ npm run check      # astro check: types and template diagnostics
 npm run check:copy # copy-fidelity gate (run after build)
 ```
 
-The build must produce zero warnings, and CI enforces it: `astro check`,
-`astro build`, and the copy gate run on every push and pull request
-(`.github/workflows/gates.yml`). Treat a warning as a broken thread.
+The build must produce zero warnings. Treat a warning as a broken thread.
+The full gate sequence is `npm run check && npm run build && npm run
+check:copy`; wiring it into GitHub Actions is a pending setup step (the
+workflow file must be pushed with `workflow`-scoped credentials).
 
 ## Knowledge base links
 
