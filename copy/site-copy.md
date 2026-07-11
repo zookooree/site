@@ -1,6 +1,6 @@
 # Zookooree: The Agent Factory
 
-*Final storefront copy, v1. Synthesized from three judged variants; see `scores.md` for the panel record.*
+*Final storefront copy, v2 — the WO-ON2 revision against the operator's PR #2 marks. Synthesized from three judged variants; see `scores.md` for both panel records.*
 
 ---
 
@@ -8,7 +8,7 @@
 
 **We build AI agents and sign our name to them: every one ships with a certificate — evidence attached, expiry date printed.**
 
-A century ago a loom learned to stop itself when a thread broke. We aim that lesson at a new material: minds — each one given a written soul before its first line of code.
+A century ago a loom learned to stop itself when a thread broke. We aim that lesson at a new material: minds.
 
 ---
 
