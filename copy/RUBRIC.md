@@ -1,106 +1,151 @@
-# Storefront Copy Rubric
+# Storefront Copy Rubric, v2
 
-The gauge is built before the part. Every variant of the site copy is scored against
-this rubric by judges who never saw the copy being written. Score each criterion 1-5.
-A variant's total is the sum (max 20). Judges return one paragraph of reasoning per
-variant per criterion group, then the table.
+Rewritten for the customer-first repositioning of issue #8. The gauge is built
+before the part: judges who never saw the copy being written score each
+criterion 1 to 5. A total is the sum, max 25. Fail closed: a judge torn
+between two scores awards the lower.
 
-The copy under judgment is a full storefront: hero (UVP one-liner + subline), the
-story (~400 words), what-we-make, the promise, principles, the invitation.
+The copy under judgment is a three-page storefront. The homepage carries the
+value: hero, three feature cards (Agents, Tools, Skills), one certificate
+block, a three-item promise, an invitation. Two back pages carry the
+philosophy: /story (the loom, the lineage, the soul document) and /floor (how
+the work runs).
+
+The positioning statement everything is measured against:
+
+> For small teams and operators who need AI agents they can run unattended in
+> real operations, Zookooree is an agent factory that ships every agent with a
+> certificate: evidence of what it was tested on, a written soul saying what
+> it values and refuses, and an expiry date that forces the claim to be
+> re-earned. Unlike agencies and DIY builds that tape a prompt to an API and
+> hope, we sign our name, publish our defects, and take the 3am call.
 
 ---
 
-## 1. UVP repeatability — can a stranger repeat it after one read?
+## 1. Hero: customer value, zero self-reference
 
-The test: a builder with no context reads the page once, closes the tab, and a friend
-asks "so what is Zookooree?" What comes out of their mouth?
+The headline names what the customer gets, never what the company does. The
+test: a stranger reads the homepage once, closes the tab, and a friend asks
+what Zookooree is. What comes out of their mouth?
 
-- **5** — They repeat the UVP almost verbatim, and it is specific: what is made, for
-  whom, and what makes it different. One sentence, no notes.
-- **4** — They get the substance right but paraphrase loosely; a distinctive word or
-  two survives the retelling.
-- **3** — They can say the category ("they build AI agents somehow, with quality?")
-  but nothing that distinguishes it from a hundred agent startups.
-- **2** — They remember the mood but not the claim. "It was poetic. Something about
-  souls."
-- **1** — They cannot say what is being offered at all.
+- **5** The headline is entirely about the customer's outcome. No "we," no
+  "our," no company name in it. The stranger repeats the offer in one
+  specific sentence: what you get, and what makes it different.
+- **4** Value-first and repeatable in substance, but a distinctive word is
+  lost in the retelling, or a trace of self-reference leans on the headline
+  from the subline.
+- **3** Value is present but shares the stage with a "we build" claim, or the
+  stranger can only name the category ("AI agents, with quality somehow").
+- **2** The stranger remembers the mood, not the claim. "It was poetic.
+  Something about factories."
+- **1** The headline is about the company, or the stranger cannot say what is
+  offered at all.
 
-Deductions: a hero one-liner that needs the subline to be parseable; jargon a stranger
-must already know (jidoka, takt) doing load-bearing work in the hero itself; more than
-one idea competing to be THE idea.
+Deductions: a headline that needs the subline to be parseable; jargon a
+stranger must already know doing load-bearing work in the hero; more than one
+idea competing to be THE idea.
 
-## 2. Voice fidelity — does it sound like the manifesto wrote it?
+## 2. Voice: Le Guin crossed with Gibson
 
-The manifesto's voice: contemplative depth, high-tech precision, poetic but never
-flowery. Declarative sentences that cost something. Show, never tell. It never
-announces its influences; the lineage is felt, not cited. It never hedges ("perhaps,"
-"one might argue") and never pitches ("revolutionary," "game-changing," "unlock").
+Precise, strange, humane, concrete. Present tense. Declarative sentences that
+cost something. Metaphors that carry weight instead of decoration. Never
+salesy: no "revolutionary," no "unlock," no "game-changing," no exclamation
+marks, no hedging ("perhaps," "one might argue"). The influences are felt,
+never cited.
 
-- **5** — Indistinguishable in register from tamazukuri.md. Short declaratives carry
-  weight. Every metaphor is load-bearing. Nothing could be signed by anyone else.
-- **4** — The voice holds with occasional slack: a sentence that explains its own
-  metaphor, a phrase any startup could have written.
-- **3** — Alternates between the manifesto's voice and generic marketing or generic
+- **5** Every sentence is exact and none is ornamental. The strangeness is
+  earned by concrete detail, the humanity by plain address to the reader.
+  Nothing on the page could be signed by anyone else.
+- **4** The voice holds with occasional slack: a sentence that explains its
+  own metaphor, a phrase any startup could have written.
+- **3** Alternates between the voice and generic marketing or generic
   gravitas. The seams show.
-- **2** — Mostly pitch-deck or mostly purple. Tells the reader how to feel.
-- **1** — Could be any AI company's landing page.
+- **2** Mostly pitch deck or mostly purple. Tells the reader how to feel.
+- **1** Could be any AI company's landing page.
 
-Deductions: name-dropping influences ("like Toyota," "as Le Guin wrote") instead of
-embodying them; adjectives doing verbs' work; exclamation of any kind; hedge words;
-the word "revolutionary" or its cousins.
+Deductions: name-dropping influences instead of embodying them; adjectives
+doing verbs' work; past or future tense where present tense would serve;
+sales cadence anywhere.
 
-## 3. Concreteness — is every abstract claim anchored by one real detail?
+## 3. Positioning fidelity
 
-Abstraction is cheap; the factory has receipts. Each large claim must stand on at
-least one real, checkable detail drawn from the source record. Canonical anchors
-include: assembly in 49 seconds for $0.37; certificates of conformance that carry an
-expiry date; the soul document written before the tools; three bugs found in testing
-and documented in a retro; a factory that publishes its partial first-run success
-instead of hiding it.
+Score the copy against the positioning statement above, element by element:
+the audience (small teams and operators running agents unattended in real
+operations), the offer (an agent factory whose every agent ships with a
+certificate), the certificate's three parts (evidence of testing, a written
+soul of values and refusals, an expiry date that forces re-earning), the
+differentiation (against taping a prompt to an API and hoping), and the
+signature (we sign our name, publish our defects, take the call). Intelligence
+is treated as the raw material bought, not the thing made; "minds" is not a
+product claim.
 
-- **5** — Every abstract claim on the page is within arm's reach of a concrete
-  anchor. The details are woven in, not listed. Numbers appear where numbers persuade.
-- **4** — Most claims anchored; one section floats free on pure assertion.
-- **3** — Anchors present but decorative — stats in a box, disconnected from the
-  claims they should carry.
-- **2** — One token number in a page of abstraction.
-- **1** — No verifiable detail anywhere. Vibes throughout.
+- **5** Every element of the statement is present, findable, and carried by
+  the copy's own words. Nothing on the page contradicts or dilutes it.
+- **4** All elements present; one is faint enough that a careful reader could
+  miss it.
+- **3** The offer and certificate are clear but the audience or the
+  differentiation is missing, or a retired claim (intelligence as the product,
+  minds as the output) survives somewhere.
+- **2** The copy gestures at the statement but a stranger could not
+  reconstruct it.
+- **1** The copy positions something else.
 
-Deductions: invented numbers or details not in the source record (automatic cap at 2);
-anchors that are name-drops of internal jargon rather than evidence a stranger can
-feel.
+Deductions: blockchain or crypto language anywhere (automatic cap at 2);
+"coming soon" anywhere (automatic cap at 2).
 
-## 4. Resonance — does it make a builder want in?
+## 4. Placement
 
-The manifesto rule: something you either join or know isn't for you. The page must end
-with the reader leaning forward. Not everyone — the right ones. A builder who has
-shipped a duct-taped agent at 2am and felt the hollowness should read this and feel
-seen, then summoned.
+The homepage carries value; the back pages carry philosophy. Principles are
+demonstrated on the homepage, preached nowhere on it. The keep-list survives:
+the loom sentence, the person beside the machine, the producer who produces
+the producer, the blade's profile, the soul document paragraph, the drift
+triplet (models get swapped, environments drift, context goes stale), the five
+disciplines, the inventory-not-product turn, verified claims about agents, the
+quality-is-a-practice sentence, the open floor and the cord, and the blessing.
 
-- **5** — The invitation lands as inevitable. The reader knows exactly what joining
-  looks like (a repo, a floor, a first step) and the last line stays with them.
-- **4** — Compelling, and the door is visible, but the handle is vague — wants in,
-  unsure how.
-- **3** — Admiration without pull. "Cool project" energy. The reader closes the tab
-  contented and unchanged.
-- **2** — The invitation is a CTA button in prose form. "Sign up for updates."
-- **1** — No invitation, or one that repels the very builders it should draw.
+- **5** Every keep-list idea has a home and the home is the right page. The
+  homepage sells without a single sermon; the back pages philosophize without
+  selling. Each page stands alone.
+- **4** Placement is right with one misfit: a philosophical paragraph pulling
+  focus on the homepage, or a keep-list item wedged where it does not belong.
+- **3** A keep-list idea is missing, or the homepage preaches a principle it
+  should demonstrate.
+- **2** Value and philosophy are interleaved on every page; the restructure
+  did not take.
+- **1** The homepage is a manifesto.
 
-Deductions: gatekeeping that reads as smugness rather than standards; an invitation
-addressed to customers when the page's soul is addressed to makers; a closing line
+## 5. Resonance for a stranger
+
+A human reader who has never heard of Zookooree, and may never buy an agent,
+finishes the homepage and feels something true was said to them. The right
+readers lean forward; the wrong ones know it is not for them. The last line
+stays.
+
+- **5** The page reads like it was written for one person and lands on
+  thousands. The invitation is concrete (a repo, a document to read, a first
+  step) and the close resonates instead of summarizing.
+- **4** Compelling, and the door is visible, but the handle is vague.
+- **3** Admiration without pull. "Cool project" energy; the tab closes and
+  nothing lingers.
+- **2** The invitation is a CTA button in prose form.
+- **1** No invitation, or one that repels the readers it should draw.
+
+Deductions: gatekeeping that reads as smugness rather than standards; a close
 that summarizes instead of resonating.
 
 ---
 
 ## Scoring output format (for judges)
 
-| Criterion | variant-1 | variant-2 | variant-3 |
-|---|---|---|---|
-| UVP repeatability | | | |
-| Voice fidelity | | | |
-| Concreteness | | | |
-| Resonance | | | |
-| **Total (/20)** | | | |
+| Criterion | v3 |
+|---|---|
+| 1. Hero: customer value, zero self-reference | |
+| 2. Voice: Le Guin crossed with Gibson | |
+| 3. Positioning fidelity | |
+| 4. Placement | |
+| 5. Resonance for a stranger | |
+| **Total (/25)** | |
 
-Plus one paragraph of reasoning per variant. Fail closed: if a judge cannot decide
-between two scores, award the lower.
+One paragraph of reasoning per criterion, then the table. Fail closed: when
+undecided between two scores, award the lower. Do not suggest rewrites; the
+score is the deliverable.
