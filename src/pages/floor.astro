@@ -1,0 +1,66 @@
+---
+import Base from "../layouts/Base.astro";
+import { GITHUB_URL, SITE_TITLE } from "../consts";
+---
+
+<Base
+  title={`The floor · ${SITE_TITLE}`}
+  description="How the work runs: jidoka, kanban, kaizen, and a floor anyone can audit."
+>
+  <main>
+    <section aria-labelledby="floor">
+      <h2 id="floor">The floor</h2>
+      <p>
+        This page is how the work runs, not what you buy. What you buy is on
+        the front page. But a factory that hides its floor is a storefront, so
+        the floor stays open.
+      </p>
+      <p>
+        The discipline is older than the material: standardize the work, build
+        quality in, stop the line, improve every day, respect the people.
+        Three words carry it on this floor.
+      </p>
+      <p>
+        <strong>Jidoka.</strong> When something is wrong, the line stops. Now,
+        not after the sprint. Every agent carries its own checks and raises
+        its own alarm, and because these workers cannot complain, the alarm
+        rings for silence too. A line that produces nothing is a stopped line,
+        not a calm one.
+      </p>
+      <p>
+        <strong>Kanban.</strong> Pull, not push. An agent is built when real
+        work pulls for it, never because budget pushes. No speculative
+        inventory, and no souls shaped with nothing to do.
+      </p>
+      <p>
+        <strong>Kaizen.</strong> Every agent better than the one before. Every
+        failure feeds back into the line. The retro is not paperwork; it is
+        how the factory learns. A finished factory is a dead one.
+      </p>
+      <p>
+        Everything that defines a unit lives in plain files and git: the soul
+        documents, the decision records, the retros with the bugs left in.
+        This is not a philosophy of openness. It is load-bearing. A claim you
+        cannot inspect is a mood, and no office here signs off on the truth;
+        the files do. Anyone can walk the floor and check, which is what the
+        certificates rest on. The repos are at <a href={GITHUB_URL}>github.com/zookooree</a>.
+      </p>
+      <p class="coda">
+        When a certificate on the front page says what was tested and what was
+        found, this floor is the reason you can believe it.
+      </p>
+    </section>
+  </main>
+</Base>
+
+<style>
+  section {
+    margin-top: clamp(3rem, 8vh, 5rem);
+  }
+
+  .coda {
+    margin-top: clamp(3rem, 8vh, 4.5rem);
+    font-style: italic;
+    color: var(--muted);
+  }
+</style>

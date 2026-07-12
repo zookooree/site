@@ -1,21 +1,37 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+const current = (href: string) => (path === href ? "page" : undefined);
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{SITE_TITLE}</title>
-    <meta name="description" content={SITE_DESCRIPTION} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
     <meta name="theme-color" content="#0e0f11" />
-    <meta property="og:title" content={SITE_TITLE} />
-    <meta property="og:description" content={SITE_DESCRIPTION} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
   </head>
   <body>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/" class="brand" aria-current={current("/")}>Zookooree · The Agent Factory</a>
+      <span class="links">
+        <a href="/story" aria-current={current("/story")}>the story</a>
+        <a href="/floor" aria-current={current("/floor")}>the floor</a>
+      </span>
+    </nav>
     <slot />
   </body>
 </html>
@@ -24,6 +40,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   :root {
     --bg: #0e0f11;
     --ink: #d9d6cf;
+    --bright: #f0ede6;
     --muted: #908d84;
     --accent: #d96a4b;
     --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
@@ -74,5 +91,80 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   a:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
+  }
+
+  /* the quiet monospace nav shared by every page */
+
+  .site-nav {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: clamp(1.25rem, 3vh, 2rem) clamp(1.25rem, 5vw, 2rem) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .site-nav a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus-visible {
+    color: var(--accent);
+  }
+
+  .site-nav a[aria-current="page"] {
+    color: var(--ink);
+  }
+
+  .site-nav .links {
+    display: flex;
+    gap: 1.5rem;
+    white-space: nowrap;
+  }
+
+  /* shared prose scaffolding for the three pages */
+
+  main {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 0 clamp(1.25rem, 5vw, 2rem) clamp(5rem, 12vh, 8rem);
+  }
+
+  section {
+    margin-top: clamp(5rem, 14vh, 8rem);
+  }
+
+  h2 {
+    font-family: var(--mono);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 2.25rem;
+  }
+
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    border-top: 1px solid var(--accent);
+    margin-bottom: 1.25rem;
+  }
+
+  p + p {
+    margin-top: 1.4em;
+  }
+
+  strong {
+    color: var(--bright);
+    font-weight: 600;
   }
 </style>
