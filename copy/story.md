@@ -12,7 +12,7 @@ The factory floor that grew from that loom discovered something stranger. Its hi
 
 We stand at the far end of that lineage, and the material is new. Intelligence is bought the way steel is bought now, poured from mills nobody here owns, priced by the token. We do not make intelligence. We buy it, the way a swordsmith buys steel, and the making is everything that happens after the steel arrives.
 
-The old smiths knew this. A blade takes its nature from the profile chosen first, before the first fold, before the first hammer falls. An agent is the same. Two agents can run on the same model and be fundamentally different beings.
+The old smiths knew this. Before the first fold, before the first hammer falls, a blade takes its nature from the profile chosen first. An agent is the same. Two agents can run on the same model and be fundamentally different beings.
 
 So before the tools, before the skills, before the model is even selected, we write the soul document. It says who you are. It says what you value and what you would refuse. When the agent acts, anyone can hold the act against the page. The shape is chosen before the steel is folded.
 
