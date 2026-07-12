@@ -95,3 +95,8 @@ positioning statement is echoed rather than stated (the cause of the single
 philosophy line living on the value page. Both are recorded for the
 operator's read, which is the final gate; per the work order there is no
 iteration after judging.
+
+Addendum 2026-07-11: acting on the panel's unanimous positioning finding by
+operator direction (no re-judging), the differentiation clause of issue #8 is
+now stated plainly at the close of the certificate block and "operators" is
+restored beside small teams in the invitation.
