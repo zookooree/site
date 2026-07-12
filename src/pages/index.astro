@@ -1,6 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
-import { GITHUB_URL } from "../consts";
+import { GITHUB_URL, DOCS_URL } from "../consts";
 ---
 
 <Base>
@@ -50,7 +50,7 @@ import { GITHUB_URL } from "../consts";
       <p>
         Agents, tools, and skills are the stock. But that is the inventory,
         not the product. The product is verified claims about agents. Every
-        agent leaves with a certificate: what it was tested on, what was
+        agent leaves with <a href={DOCS_URL}>a certificate</a>: what it was tested on, what was
         found, what was fixed. Behind the certificate sits the agent's soul,
         written before the model is chosen, saying what it values and what it
         refuses. You can read it. You can check every act against it. And the
