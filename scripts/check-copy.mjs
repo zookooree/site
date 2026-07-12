@@ -45,6 +45,7 @@ const renderedText = (html) =>
 // markdown bold markers and link syntax.
 const paragraphsOf = (md) =>
   md
+    .replace(/<!--[\s\S]*?-->/g, "")
     .split("\n")
     .map((l) => l.trim())
     .filter((l) => l && l !== "---" && !l.startsWith("#") && !l.startsWith("<!--"))
@@ -96,17 +97,16 @@ for (const file of [...copyFiles, ...srcFiles]) {
 }
 
 // ── 3. Soul budget ──────────────────────────────────────────────────────
+// Counted over the copy paragraphs (what renders), not file annotations.
 const homeCopy = readFileSync(join(root, "copy/home.md"), "utf8");
-const soulCount = (homeCopy.match(/soul/gi) ?? []).length;
+const homeParagraphText = paragraphsOf(homeCopy).join(" ");
+const soulCount = (homeParagraphText.match(/soul/gi) ?? []).length;
 if (soulCount > 1) {
   failures.push(`soul budget: "soul" appears ${soulCount} times in copy/home.md; the budget is 1`);
 }
 
 // ── 4. Length budget ────────────────────────────────────────────────────
-const homeWords = paragraphsOf(homeCopy)
-  .join(" ")
-  .split(/\s+/)
-  .filter(Boolean).length;
+const homeWords = homeParagraphText.split(/\s+/).filter(Boolean).length;
 if (homeWords > 450) {
   failures.push(`length budget: homepage copy is ${homeWords} words; the budget is 450`);
 }

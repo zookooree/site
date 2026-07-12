@@ -90,8 +90,8 @@ product claim.
   reconstruct it.
 - **1** The copy positions something else.
 
-Deductions: blockchain or crypto language anywhere (automatic cap at 2);
-"coming soon" anywhere (automatic cap at 2).
+Deductions: blockchain or crypto language anywhere (automatic cap at 2); any
+placeholder promising that content is on its way (automatic cap at 2).
 
 ## 4. Placement
 
