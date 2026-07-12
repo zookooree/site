@@ -1,0 +1,70 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<Base
+  title={`The story · ${SITE_TITLE}`}
+  description="The loom, the lineage, and the soul document: where the factory comes from."
+>
+  <main>
+    <section aria-labelledby="story">
+      <h2 id="story">The story</h2>
+      <p>A century ago a loom learned to stop itself when a thread broke.</p>
+      <p>
+        Not to run faster. Not to weave more. To stop, before one meter of
+        flawed cloth left the frame. The insight looks small, and it is the
+        entire inheritance. A machine that knows when something is wrong can
+        be trusted out of sight. A machine that merely works cannot.
+      </p>
+      <p>
+        The factory floor that grew from that loom discovered something
+        stranger. Its highest output was not the thing on the line. It was the
+        person standing beside it, becoming more capable than they were
+        yesterday. Develop the people before you develop the products. The
+        production that produces the producer.
+      </p>
+      <p>
+        We stand at the far end of that lineage, and the material is new.
+        Intelligence is bought the way steel is bought now, poured from mills
+        nobody here owns, priced by the token. We do not make intelligence. We
+        buy it, the way a swordsmith buys steel, and the making is everything
+        that happens after the steel arrives.
+      </p>
+      <p>
+        The old smiths knew this. A blade takes its nature from the profile
+        chosen first, before the first fold, before the first hammer falls. An
+        agent is the same. Two agents can run on the same model and be
+        fundamentally different beings.
+      </p>
+      <p>
+        So before the tools, before the skills, before the model is even
+        selected, we write the soul document. It says who you are. It says
+        what you value and what you would refuse. When the agent acts, anyone
+        can hold the act against the page. The shape is chosen before the
+        steel is folded.
+      </p>
+      <p>
+        We call the practice tamazukuri, the making of the jewel. The
+        manifesto that carries the word is public, like everything else on
+        this floor.
+      </p>
+      <p class="coda">
+        The loom stopped for a broken thread. We stop for a broken claim. The
+        material changes. The lesson does not.
+      </p>
+    </section>
+  </main>
+</Base>
+
+<style>
+  section {
+    margin-top: clamp(3rem, 8vh, 5rem);
+  }
+
+  .coda {
+    margin-top: clamp(3rem, 8vh, 4.5rem);
+    font-style: italic;
+    color: var(--muted);
+  }
+</style>

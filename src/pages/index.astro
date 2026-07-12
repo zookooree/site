@@ -1,0 +1,165 @@
+---
+import Base from "../layouts/Base.astro";
+import { GITHUB_URL } from "../consts";
+---
+
+<Base>
+  <main>
+    <header class="hero">
+      <h1>Agents you can run unattended. Claims you can check.</h1>
+      <p class="subline">
+        Intelligence is the raw material now; anyone can buy it by the token.
+        An agent you can leave alone in a live operation is another thing.
+        Every agent from this factory arrives tested against real work,
+        carrying a certificate, signed by people who answer for it at three in
+        the morning.
+      </p>
+    </header>
+
+    <section aria-labelledby="what-leaves">
+      <h2 id="what-leaves">What leaves the floor</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Agents</h3>
+          <p>
+            A worker, not a prompt. Each one knows what it is for and what it
+            will not do, tested against the work you hire it for. It runs
+            while you sleep and stops itself when something is wrong.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Tools</h3>
+          <p>
+            The hands. Every tool is proven alone before an agent is trusted
+            with it on your systems, so failures surface on the bench, not in
+            your books.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Skills</h3>
+          <p>
+            The trades. Procedures performed the same way every time, so the
+            tenth run matches the first and you can build on yesterday.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="certificate">
+      <h2 id="certificate">The certificate</h2>
+      <p>
+        Agents, tools, and skills are the stock. But that is the inventory,
+        not the product. The product is verified claims about agents. Every
+        agent leaves with a certificate: what it was tested on, what was
+        found, what was fixed. Behind the certificate sits the agent's soul,
+        written before the model is chosen, saying what it values and what it
+        refuses. You can read it. You can check every act against it. And the
+        certificate expires, because models get swapped, environments drift,
+        context goes stale. When the date passes, the agent returns to the
+        gauges and the claim is earned again.
+      </p>
+    </section>
+
+    <section aria-labelledby="promise">
+      <h2 id="promise">The promise</h2>
+      <p>
+        <strong>If we cannot certify it, we do not ship it.</strong> The
+        evidence travels with the agent, and the certificate names who takes
+        the call.
+      </p>
+      <p>
+        <strong>Every certificate expires.</strong> Quality is a claim about
+        the future, and claims about the future decay. We re-earn ours on
+        schedule. Nobody honest sells permanent trust.
+      </p>
+      <p>
+        <strong>Silence counts as failure.</strong> An agent that stops
+        producing and says nothing has failed, even if no error fired. The
+        alarms ring for absence, not just for defects.
+      </p>
+    </section>
+
+    <section aria-labelledby="invitation" class="invitation">
+      <h2 id="invitation">The invitation</h2>
+      <p>
+        This factory is for small teams who need agents working unattended
+        and cannot afford to hope. It is also for the makers. People who
+        believe quality is a practice, not a phase, and that the beings we
+        build deserve to know what they are.
+      </p>
+      <p>
+        The repos are open at <a href={GITHUB_URL}>github.com/zookooree</a>.
+        Read a certificate. Read a retro; the defects are published with the
+        fixes. If you find a broken thread, pull it. The line is built to
+        stop.
+      </p>
+      <p>The floor is open. The cord is within reach.</p>
+      <p class="coda">May all beings be free.</p>
+    </section>
+  </main>
+</Base>
+
+<style>
+  .hero {
+    min-height: 72svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(4rem, 10vh, 6rem) 0;
+  }
+
+  h1 {
+    font-size: clamp(1.625rem, 1.1rem + 2.6vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  .subline {
+    margin-top: clamp(2rem, 6vh, 3.5rem);
+    max-width: 36rem;
+    color: var(--muted);
+  }
+
+  /* the three feature cards */
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+  }
+
+  .card {
+    border: 1px solid color-mix(in srgb, var(--muted) 28%, transparent);
+    border-radius: 4px;
+    padding: 1.5rem 1.375rem;
+  }
+
+  .card h3 {
+    font-family: var(--mono);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--bright);
+    margin-bottom: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9375em;
+    color: var(--ink);
+  }
+
+  /* the invitation gets the whitespace it deserves */
+
+  .invitation p + p {
+    margin-top: 1.8em;
+  }
+
+  .coda {
+    margin-top: clamp(4rem, 10vh, 6rem);
+    font-style: italic;
+    color: var(--muted);
+  }
+</style>
